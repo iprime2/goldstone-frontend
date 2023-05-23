@@ -1,0 +1,52 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 80%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  scroll-behavior: smooth;
+
+  .homeTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    button {
+      border: none;
+      border-radius: 10px;
+      height: 40px;
+      width: 80px;
+      font-weight: 600;
+      padding: 5px;
+      background-color: rgb(41, 146, 232);
+      color: white;
+      cursor: pointer;
+
+      &:hover {
+        background-color: rgb(95, 169, 230);
+      }
+    }
+
+    .createBtn {
+      border: none;
+      border-radius: 10px;
+      height: 40px;
+      width: 100px;
+      font-weight: 600;
+      padding: 5px;
+      background-color: rgb(41, 146, 232);
+      color: white;
+      cursor: pointer;
+
+      &:hover {
+        background-color: rgb(95, 169, 230);
+      }
+    }
+  }
+}
