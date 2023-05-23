@@ -11,13 +11,10 @@ const useGetUsers = () => {
   //     fetcher
   //   )
 
-  const uploadUsers = async (user) => {
+  const getUsers = async () => {
     setIsLoading(true)
     try {
-      const res = await axios.get(
-        process.env.REACT_APP_API_URL + '/users',
-        user
-      )
+      const res = await axios.get(process.env.REACT_APP_API_URL + '/users')
       console.log(res)
       setData(res.data)
     } catch (error) {
@@ -29,7 +26,7 @@ const useGetUsers = () => {
   }
 
   useEffect(() => {
-    uploadUsers()
+    getUsers()
   }, [])
 
   return { data, isLoading, error }
