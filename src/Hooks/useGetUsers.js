@@ -14,7 +14,7 @@ const useGetUsers = () => {
   const getUsers = async () => {
     setIsLoading(true)
     try {
-      const res = await axios.get(process.env.REACT_APP_API_URL + '/users')
+      const res = await axios.get( '/users')
       console.log(res)
       setData(res.data)
     } catch (error) {
